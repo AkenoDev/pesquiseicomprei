@@ -13,6 +13,7 @@
 
     body {
       height: 100vh;
+      position: relative; /* Adicionado */
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
@@ -26,7 +27,7 @@
       top: 0; left: 0; right: 0; bottom: 0;
       backdrop-filter: blur(10px);
       background: rgba(0, 0, 0, 0);
-      z-index: 1;
+      z-index: 0;
     }
 
     .container {
@@ -56,12 +57,12 @@
       font-size: 22px;
       font-weight: bold;
       color: #FFF;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .link-button {
       font-family: 'Segoe UI', sans-serif;
-      font-weight: 600;
+      font-weight: 400;
       background: rgba(255,255,255,0.9);
       padding: 15px 20px;
       margin-bottom: 15px;
@@ -84,6 +85,14 @@
       margin-left: 0px;
       vertical-align: middle;
     }
+    .subtitulo {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 18px;
+      color: #FFF;
+      margin-bottom: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -98,7 +107,7 @@
     <img src="https://i.imgur.com/9N3ez5Y.png" alt="verificado" class="verificado" />
     </h1>
     
-    <h1>Ver ofertas nas lojas</h1>
+    <h2 class="subtitulo">Ver ofertas nas lojas</h2>
 
     <a href="https://amzn.to/40C8L7D" class="link-button">Amazon</a>
     <a href="https://s.click.aliexpress.com/e/_on7O2yL" class="link-button">AliExpress</a>
