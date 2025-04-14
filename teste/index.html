@@ -33,46 +33,57 @@
       background-position: center;
     }
 
+    .amazon {
+      background-image: url('https://melhoresofertas.uai.com.br/wp-content/uploads/2024/02/compras-Amazon.jpg'); /* use a imagem da amazon */
+      filter: blur(4px) brightness(0.7);
+    }
+
+    .aliexpress {
+      background-image: url('https://img.odcdn.com.br/wp-content/uploads/2020/12/comprar-no-aliexpress-e1686868249340.jpg'); /* substitua por uma imagem da AliExpress real */
+      filter: blur(4px) brightness(0.7);
+    }
+
     .overlay {
       position: absolute;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0,0,0,0.4);
     }
 
     .content {
       position: relative;
       z-index: 2;
+      color: white;
     }
 
     .button {
-      padding: 20px 40px;
+      padding: 15px 30px;
       margin-top: 20px;
-      font-size: 22px;
-      background-color: #007bff;
+      font-size: 18px;
+      background-color: #000000cc;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
       transition: background-color 0.3s;
     }
 
     .button:hover {
-      background-color: #0056b3;
+      background-color: #111;
     }
 
     .center-text {
       position: absolute;
-      top: 20%;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       background-color: black;
-      padding: 25px 50px;
+      padding: 20px 40px;
       color: white;
       z-index: 3;
-      font-size: 28px;
+      font-size: 24px;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -80,7 +91,6 @@
 
   <div class="container">
     <!-- Lado Amazon -->
-    <div class="side" style="background-image: url('https://melhoresofertas.uai.com.br/wp-content/uploads/2024/02/compras-Amazon.jpg');">
       <div class="overlay"></div>
       <div class="content">
         <a href="https://amzn.to/40C8L7D" class="button" target="_blank">Ir para Amazon</a>
@@ -91,7 +101,6 @@
     <div class="center-text">ESCOLHA SUA LOJA PREFERIDA</div>
 
     <!-- Lado AliExpress -->
-    <div class="side" style="background-image: url('https://img.odcdn.com.br/wp-content/uploads/2020/12/comprar-no-aliexpress-e1686868249340.jpg');">
       <div class="overlay"></div>
       <div class="content">
         <a href="https://s.click.aliexpress.com/e/_on7O2yL" class="button" target="_blank">Ir para AliExpress</a>
