@@ -13,21 +13,12 @@
 
     body {
       height: 100vh;
-      position: relative; /* Adicionado */
+      position: relative;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
       background: url('https://images2.alphacoders.com/589/thumb-1920-589399.jpg') no-repeat center center;
       background-size: cover;
-    }
-
-    .overlay {
-     position: absolute;
-     top: 0; left: 0; right: 0; bottom: 0;
-     backdrop-filter: blur(10px);
-     background: rgba(0, 0, 0, 0);
-     z-index: 0; /* Mantém ela atrás */
     }
 
     .container {
@@ -36,6 +27,15 @@
       text-align: center;
       width: 90%;
       max-width: 500px;
+      padding-top: 100px; /* Adicionado para empurrar o conteúdo para baixo */
+    }
+
+    .overlay {
+     position: absolute;
+     top: 0; left: 0; right: 0; bottom: 0;
+     backdrop-filter: blur(10px);
+     background: rgba(0, 0, 0, 0);
+     z-index: 0; /* Mantém ela atrás */
     }
 
     .profile-pic {
@@ -57,7 +57,7 @@
       font-size: 22px;
       font-weight: bold;
       color: #FFF;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
     .link-button {
@@ -73,7 +73,7 @@
       text-decoration: none;
       display: block; /* Precisa ser block ou flex */
       transition: 0.2s ease;
-      width: 400px; /* Ajuste a largura do botão */
+      width: 500px; /* Ajuste a largura do botão */
       text-align: center; /* Centraliza o texto dentro do botão */
     }
 
