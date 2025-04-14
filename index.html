@@ -1,9 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://amzn.to/40C8L7D" />
-  </head>
-  <body>
-    <p>Redirecionando para a promoção da Amazon...</p>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PesquiseiComprei</title>
+  <link rel="icon" href="https://i.imgur.com/gwZnnZe.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      position: relative;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      background: url('https://images2.alphacoders.com/589/thumb-1920-589399.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      padding-top: 100px; /* Adicionado para empurrar o conteúdo para baixo */
+    }
+
+    .overlay {
+     position: absolute;
+     top: 0; left: 0; right: 0; bottom: 0;
+     backdrop-filter: blur(10px);
+     background: rgba(0, 0, 0, 0);
+     z-index: 0; /* Mantém ela atrás */
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      overflow: hidden;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #FFF;
+      margin-bottom: 60px;
+    }
+
+    .link-button {
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 500;
+      background: rgba(255,255,255,0.9);
+      padding: 16px 16px; /* Ajuste o padding se quiser diminuir a altura também */
+      margin: 20px auto; /* Centraliza o botão */
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-size: 16px;
+      color: #000;
+      text-decoration: none;
+      display: block; /* Precisa ser block ou flex */
+      transition: 0.2s ease;
+      width: 400px; /* Ajuste a largura do botão */
+      text-align: center; /* Centraliza o texto dentro do botão */
+    }
+
+    .link-button:hover {
+      transform: scale(1.03);
+      background-color: #A0CDE8;
+    }
+    .verificado {
+      width: 16px;
+      height: 16px;
+      margin-left: 0px;
+      vertical-align: middle;
+    }
+    .subtitulo {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 20px;
+      color: #FFF;
+      margin-bottom: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="profile-pic">
+      <img src="https://ugc.production.linktr.ee/e24f72c1-f65e-480c-bcb0-5fc247e1ad9f_compreicomprei.png" alt="logo pesquiseicomprei" />
+    </div>
+    <h1>
+    PesquiseiComprei
+    <img src="https://i.imgur.com/9N3ez5Y.png" alt="verificado" class="verificado" />
+    </h1>
+    
+    <h2 class="subtitulo">Aproveite as ofertas nas lojas</h2>
+
+    <a href="https://amzn.to/40C8L7D" class="link-button">Amazon</a>
+    <a href="https://s.click.aliexpress.com/e/_on7O2yL" class="link-button">AliExpress</a>
+
+  </div>
+</body>
 </html>
