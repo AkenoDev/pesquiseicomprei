@@ -9,6 +9,7 @@
   <meta name="description" content="Encontre as melhores ofertas da Amazon e AliExpress com o Pesquisei Comprei. Feito com amor por quem vive atrás dos melhores preços.">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <style>
+  @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap);
     * {
       box-sizing: border-box;
       margin: 0;
@@ -77,14 +78,14 @@
     }
 
     .link-button {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Noto Sans';
       font-weight: 400;
       background: rgba(255,255,255,0.9);
       padding: 14px 16px;
       margin: 12px auto;
       border-radius: 5px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      font-size: 16px;
+      font-size: 15px;
       color: #000;
       text-decoration: none;
       display: block;
@@ -94,9 +95,14 @@
       text-align: center;
     }
 
-    .link-button:hover {
-      transform: scale(1.03);
-      background-color: #A0CDE8;
+    .btn-amazon:hover {
+      background-color: #ff9900;
+      color: #fff;
+    }
+
+    .btn-aliexpress:hover {
+      background-color: #e02e24;
+      color: #fff;
     }
 
     .verificado {
@@ -148,13 +154,13 @@
     </div>
     <h1>
       Pesquisei Comprei
-      <img src="https://i.imgur.com/9N3ez5Y.png" alt="verificado" class="verificado" aria-hidden="true" />
+      <img src="verificado.svg" alt="verificado" class="verificado" title="Verificado" aria-hidden="true" />
     </h1>
     
     <h2 class="subtitulo">Aproveite as ofertas nas lojas</h2>
 
-    <a href="https://www.amazon.com.br/deals?&linkCode=ll2&tag=pesquisei-akenodev-20&linkId=7111bcf3070834446bca78838bdfbf9b&language=pt_BR&ref_=as_li_ss_tl" class="link-button">🛒 Ver Ofertas na Amazon</a>
-    <a href="https://s.click.aliexpress.com/e/_on7O2yL" class="link-button">🛍️ Ver Ofertas no AliExpress</a>
+    <a href="https://www.amazon.com.br/deals?&linkCode=ll2&tag=pesquisei-akenodev-20&linkId=7111bcf3070834446bca78838bdfbf9b&language=pt_BR&ref_=as_li_ss_tl" class="link-button btn-amazon">🛒 Ver Ofertas na Amazon</a>
+    <a href="https://s.click.aliexpress.com/e/_on7O2yL" class="link-button btn-aliexpress">🛍️ Ver Ofertas no AliExpress</a>
 
   </div>
 </body>
