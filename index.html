@@ -38,8 +38,8 @@
     .overlay {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      backdrop-filter: blur(10px);
-      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(5px); /* mais leve */
+      background: rgba(0, 0, 0, 0.4); /* melhora contraste e desempenho */
       z-index: 0;
     }
 
@@ -89,7 +89,8 @@
       color: #000;
       text-decoration: none;
       display: block;
-      transition: 0.2s ease;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      will-change: transform;
       width: 100%;
       max-width: 400px;
       text-align: center;
@@ -98,11 +99,13 @@
     .btn-amazon:hover {
       background-color: #ff9900;
       color: #fff;
+      transform: scale(1.03);
     }
 
     .btn-aliexpress:hover {
       background-color: #e02e24;
       color: #fff;
+      transform: scale(1.03);
     }
 
     .verificado {
@@ -155,8 +158,8 @@
     <h1>
       Pesquisei Comprei
       <a href="https://trafficlight.bitdefender.com/info/?url=https%3A%2F%2Fpesquiseicomprei.com%2F" target="_blank" rel="noopener noreferrer">
-    <img src="verificado.svg" alt="verificado" class="verificado" title="Verificado" aria-hidden="true" />
-  </a>
+        <img src="verificado.svg" alt="verificado" class="verificado" title="Verificado" aria-hidden="true" />
+      </a>
     </h1>
     
     <h2 class="subtitulo">Aproveite as ofertas nas lojas</h2>
